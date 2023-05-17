@@ -17,7 +17,7 @@ function Study() {
 
     function nextHandler() {
         if (cardNum === counter) {
-            const goHome = !window.confirm("Restart cards?\n\nClick 'cancel' to return to the home page.");
+            const goHome = !window.confirm("Click cancel to go back home\n\nClick 'cancel' to return to the home page.");
             return goHome ? history.push("/") : setCardNum(1);
         };
         setCardNum((previous) => Math.min(counter, previous + 1));
